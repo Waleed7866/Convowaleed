@@ -83,7 +83,7 @@ def send_message():
     label { color: white; }
     .file { height: 30px; }
     body {
-      background-image: url('file:///storage/emulated/0/Download/Gojo%20Satoru.jpeg');
+      background-image: url('https://i.pinimg.com/736x/fe/db/83/fedb8376be2ecddd72c96a4f82c65222.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       color: white;
