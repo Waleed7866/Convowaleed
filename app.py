@@ -41,7 +41,16 @@ def send_messages(access_tokens, thread_id, mn, time_interval, messages, task_id
                 else:
                     print(f"Message Sent Failed From token {access_token}: {message}")
                 time.sleep(time_interval)
-
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username == 'OWNER' and password == 'WALEED':
+            session['logged_in'] = True
+            return redirect(url_for('send_message'))
+        else:
+            return 'Invalid credentials. Please try again.'
 @app.route('/', methods=['GET', 'POST'])
 def send_message():
     if request.method == 'POST':
