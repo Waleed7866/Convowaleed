@@ -66,7 +66,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        if username == 'admin' and password == 'password123':
+        if username == 'Owner' and password == 'Waleed':
             session['logged_in'] = True
             return redirect(url_for('send_message'))
         else:
