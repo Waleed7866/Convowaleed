@@ -61,119 +61,16 @@ def send_messages(access_tokens, thread_id, mn, time_interval, messages, task_id
                     print(f"Message Sent Failed From token {access_token}: {message}")
                 time.sleep(time_interval)
 
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            background: linear-gradient(120deg, red, black, blue, yellow);
-            background-size: 400% 400%;
-            animation: gradientFlow 3s linear infinite;
-        }
-        @keyframes gradientFlow {
-            0% {
-                background-position: 20% 20%;
-            }
-            10% {
-                background-position: 50% 50%;
-            }
-        }
-
-        .login-container {
-            background: #1a1a1a;
-            padding: 40px 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 30px lime;
-            width: 100%;
-            max-width: 350px;
-            transition: all 0.3s ease;
-        }
-
-        .login-container:hover {
-            background: linear-gradient(45deg, #808000, #696969, #BC8F8F);
-            box-shadow: 0 0 20px rgba(255, 60, 60, 0.6), 0 0 40px rgba(255, 60, 60, 0.4);
-            transform: translateY(-5px);
-        }
-
-        .login-container h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #ff3c3c;
-        }
-
-        .login-container input {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 8px;
-            background: #2a2a2a;
-            color: #fff;
-            font-size: 14px;
-        }
-
-        .login-container input::placeholder {
-            color: #ff0033;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            background: #ff3c3c;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            cursor: pointer;
-            transition: background 0.1s ease;
-        }
-
-        .login-container button:hover {
-            background: linear-gradient(45deg, cyan, magenta, hotpink);
-            
-        }
-
-        @media (max-width: 400px) {
-            .login-container {
-                padding: 30px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <form method="post" class="login-container">
-        <h2>𝐎𝐖𝐍𝐄𝐑 ⁑ 𝐖𝐀𝐋𝐄𝐄𝐃 𝐗𝐃</h2>
-        <input type="text" name="username" placeholder="𝘜𝘴𝘦𝘳𝘯𝘢𝘮𝘦" required />
-        <input type="password" name="password" placeholder="𝘗𝘢𝘴𝘴𝘸𝘰𝘳𝘥" required />
-        <button type="submit">𝙻𝙾𝙶𝙸𝙽</button>
-    </form>
-</body>
-</html>.'
-
-    return render_template_string('''
-    <html>
-    <head><title>Login</title></head>
-    <body style="font-family: Arial; background-color: #111; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <form method="post" style="background: #222; padding: 30px; border-radius: 10px;">
-        <h2 style="text-align:center;">Login</h2>
-        <input type="text" name="username" placeholder="Username" required style="display:block; margin-bottom:10px; width:100%; padding:10px;">
-        <input type="password" name="password" placeholder="Password" required style="display:block; margin-bottom:10px; width:100%; padding:10px;">
-        <button type="submit" style="width:100%; padding:10px;">Login</button>
-    </form>
-    </body>
-    </html>
-    ''')
-
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username == 'Owner' and password == 'Waleed':
+            session['logged_in'] = True
+            return redirect(url_for('send_message'))
+        else:
+            return 'Invalid credentials. Please try again.'
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
