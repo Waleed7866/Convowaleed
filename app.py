@@ -137,7 +137,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝐑𝐀𝐅𝐅𝐀𝐘 𝐌𝐔𝐋𝐓𝐈 𝐂𝐎𝐍𝐕𝐎</title>
+  <title>𝐖𝐀𝐋𝐄𝐄𝐃 𝐌𝐔𝐋𝐓𝐈 𝐂𝐎𝐍𝐕𝐎</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
