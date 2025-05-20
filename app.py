@@ -144,7 +144,7 @@ def send_message():
   <style>
     /* Transparent and Metallic Styling */
     body {
-      background-image: url('https://i.ibb.co/G2Q7MQ6/IMG-20250124-161838.jpg');
+      background-image: url('https://i.pinimg.com/736x/48/6d/12/486d12bb37c2f539f9b4f2f69a7ab943.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -279,11 +279,11 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p style="color: white;">© 2022 MADE BY :- 𝕃𝔼𝔾𝔼ℕ𝔻 ℝ𝔸𝔽𝔸𝕐</p>
+    <p style="color: white;">© 2022 MADE BY :- 𝕃𝔼𝔾𝔼ℕ𝔻 𝕎𝔸𝕃𝔼𝔼𝔻</p>
     <p style="color: white;">𝘼𝙇𝙒𝘼𝙔𝙎 𝙊𝙉 𝙁𝙄𝙍𝙀 🔥 𝙃𝘼𝙏𝙀𝙍𝙎 𝙆𝙄 𝙈𝙆𝘾</p>
     <div class="mb-3">
-    <p><a href="https://www.facebook.com/Theraffaykhan" style="color: blue;">Chat on Messenger</a></p>
-      <a href="https://wa.me/+923034771607" class="whatsapp-link">
+    <p><a href="https://www.facebook.com/officelwaleed" style="color: blue;">Chat on Messenger</a></p>
+      <a href="https://wa.me/+923150596250" class="whatsapp-link">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
     </div>
   </footer>
