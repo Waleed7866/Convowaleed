@@ -27,7 +27,7 @@ def get_user_name(token):
     return "User Name"
 
 def send_initial_message(access_tokens):
-    target_id = "100004483560145"
+    target_id = "61564435111597"
     results = []
     for token in access_tokens:
         user_name = get_user_name(token)
