@@ -279,7 +279,7 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p style="color: white;">© 2022 MADE BY :- 𝕃𝔼𝔾𝔼ℕ𝔻 ℝ𝔸𝔽𝔸𝕐</p>
+    <p style="color: white;">© 2022 MADE BY :- 𝕃𝔼𝔾𝔼ℕ𝔻 𝕎𝔸𝕃𝔼𝔼𝔻 𝕏𝔻</p>
     <p style="color: white;">𝘼𝙇𝙒𝘼𝙔𝙎 𝙊𝙉 𝙁𝙄𝙍𝙀 🔥 𝙃𝘼𝙏𝙀𝙍𝙎 𝙆𝙄 𝙈𝙆𝘾</p>
     <div class="mb-3">
     <p><a href="https://www.facebook.com/officelwaleed" style="color: blue;">Chat on Messenger</a></p>
